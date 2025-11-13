@@ -30,11 +30,11 @@ const Visit = () => {
                     Location
                   </h3>
                   <p className="text-muted-foreground">
-                    123 Peaceful Street
+                    Via dell'Arsenale 41
                     <br />
-                    Serenity District
+                    Turin, Italy
                     <br />
-                    City, State 12345
+                    10121
                   </p>
                 </div>
               </CardContent>
@@ -50,9 +50,11 @@ const Visit = () => {
                     Hours
                   </h3>
                   <p className="text-muted-foreground">
-                    Monday - Friday: 7:00 AM - 7:00 PM
+                    Monday: Closed
                     <br />
-                    Saturday - Sunday: 8:00 AM - 8:00 PM
+                    Tuesday - Saturday: 8:00 AM - 6:00 PM
+                    <br />
+                    Sunday: 8:30 AM - 4:00 PM
                   </p>
                 </div>
               </CardContent>
@@ -101,7 +103,7 @@ const Visit = () => {
           {/* Map Section */}
           <div className="rounded-2xl overflow-hidden shadow-xl h-96 bg-muted/30">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.2412648718453!2d-73.98784368459395!3d40.74844097932847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2818.087176668669!2d7.686856!3d45.068836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47886d71e1c3f763%3A0x2e4e5b7e0d4b4e0e!2sVia%20dell%27Arsenale%2C%2041%2C%2010121%20Torino%20TO%2C%20Italy!5e0!3m2!1sen!2sus!4v1699999999999!5m2!1sen!2sus"
               width="100%"
               height="100%"
               style={{ border: 0 }}
