@@ -1,21 +1,23 @@
 import { useState } from "react";
-import gallery1 from "@/assets/gallery-1.jpg";
-import gallery2 from "@/assets/gallery-2.jpg";
-import coffee1 from "@/assets/coffee-1.jpg";
-import coffee2 from "@/assets/coffee-2.jpg";
-import dessert1 from "@/assets/dessert-1.jpg";
-import heroImage from "@/assets/hero-cafe.jpg";
+import cafeInterior1 from "@/assets/cafe-interior-1.jpg";
+import cafeInterior2 from "@/assets/cafe-interior-2.jpg";
+import cafeInterior3 from "@/assets/cafe-interior-3.jpg";
+import cafeBar1 from "@/assets/cafe-bar-1.jpg";
+import cafeBar2 from "@/assets/cafe-bar-2.jpg";
+import cafeDesserts from "@/assets/cafe-desserts.jpg";
+import cafeExterior from "@/assets/cafe-exterior.jpg";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const images = [
-    { src: heroImage, alt: "Café Interior", category: "Interior" },
-    { src: gallery1, alt: "Cozy Corner", category: "Interior" },
-    { src: gallery2, alt: "Coffee Moment", category: "Moments" },
-    { src: coffee1, alt: "Latte Art", category: "Drinks" },
-    { src: coffee2, alt: "Matcha Latte", category: "Drinks" },
-    { src: dessert1, alt: "Pastries", category: "Food" },
+    { src: cafeExterior, alt: "Oishii Café Storefront", category: "Exterior" },
+    { src: cafeInterior1, alt: "Cozy Interior & Coffee Bar", category: "Interior" },
+    { src: cafeInterior2, alt: "Seating Area with Natural Light", category: "Interior" },
+    { src: cafeInterior3, alt: "Coffee Display & Wall Art", category: "Interior" },
+    { src: cafeBar1, alt: "Specialty Coffee Equipment", category: "Bar" },
+    { src: cafeBar2, alt: "Coffee Selection & Menu", category: "Bar" },
+    { src: cafeDesserts, alt: "Fresh Pastries & Desserts", category: "Food" },
   ];
 
   return (
