@@ -11,101 +11,83 @@ const Menu = () => {
     {
       id: "espresso",
       name: "Espresso",
-      description: "Rich, bold shot of perfectly extracted coffee",
-      price: "$3.50",
+      description: "Shot perfetto di caffè specialty",
+      price: "€3",
       image: coffee1,
     },
     {
-      id: "latte",
-      name: "Café Latte",
-      description: "Smooth espresso with steamed milk and delicate foam",
-      price: "$4.50",
+      id: "flat-white",
+      name: "Flat White",
+      description: "Espresso con latte vellutato e microfoam",
+      price: "€4,50",
       image: coffee1,
     },
     {
-      id: "cappuccino",
-      name: "Cappuccino",
-      description: "Equal parts espresso, steamed milk, and foam",
-      price: "$4.50",
-      image: coffee1,
-    },
-    {
-      id: "matcha",
-      name: "Matcha Latte",
-      description: "Premium ceremonial grade matcha with your choice of milk",
-      price: "$5.50",
+      id: "iced-latte",
+      name: "Iced Latte",
+      description: "Latte freddo rinfrescante",
+      price: "€4,50",
       image: coffee2,
     },
     {
-      id: "pour-over",
-      name: "Pour Over",
-      description: "Single-origin coffee carefully brewed to order",
-      price: "$5.00",
+      id: "espresso-tonic",
+      name: "Espresso Tonic",
+      description: "Espresso con acqua tonica e ghiaccio",
+      price: "€6",
       image: coffee1,
     },
     {
       id: "cold-brew",
       name: "Cold Brew",
-      description: "Smooth, refreshing coffee steeped for 18 hours",
-      price: "$4.75",
+      description: "Caffè filtrato a freddo per 18 ore",
+      price: "€5",
       image: coffee1,
+    },
+    {
+      id: "moka-pump",
+      name: "Moka Pump (per 2)",
+      description: "Esperienza di caffè moka da condividere",
+      price: "€15",
+      image: coffee2,
+    },
+    {
+      id: "filtro",
+      name: "Filtro in Calice",
+      description: "Caffè filtro servito in calice di cristallo soffiato",
+      price: "da €5",
+      image: coffee1,
+    },
+    {
+      id: "omakase",
+      name: "Menù Omakase",
+      description: "Degustazione guidata di caffè specialty",
+      price: "€12",
+      image: coffee2,
     },
   ];
 
   const teaItems = [
     {
-      id: "sencha",
-      name: "Sencha Green Tea",
-      description: "Classic Japanese green tea with a fresh, grassy flavor",
-      price: "$4.00",
-    },
-    {
-      id: "hojicha",
-      name: "Hojicha",
-      description: "Roasted green tea with a warm, nutty aroma",
-      price: "$4.25",
-    },
-    {
-      id: "earl-grey",
-      name: "Earl Grey",
-      description: "Black tea infused with bergamot oil",
-      price: "$3.75",
-    },
-    {
-      id: "chamomile",
-      name: "Chamomile",
-      description: "Calming herbal tea perfect for relaxation",
-      price: "$3.50",
+      id: "info",
+      name: "Selezione Tè",
+      description: "Chiedi al nostro staff per la selezione del giorno",
+      price: "Varia",
     },
   ];
 
   const dessertItems = [
     {
-      id: "croissant",
-      name: "Butter Croissant",
-      description: "Flaky, buttery French pastry baked fresh daily",
-      price: "$3.75",
+      id: "cookies",
+      name: "Cookies / Biscotti",
+      description: "Biscotti artigianali preparati freschi ogni giorno",
+      price: "Varia",
       image: dessert1,
     },
     {
-      id: "mochi",
-      name: "Matcha Mochi",
-      description: "Soft, chewy rice cake filled with sweet red bean paste",
-      price: "$4.50",
-      image: dessert1,
-    },
-    {
-      id: "cardamom-bun",
-      name: "Cardamom Bun",
-      description: "Scandinavian sweet roll with aromatic cardamom",
-      price: "$4.25",
-      image: dessert1,
-    },
-    {
-      id: "cheesecake",
-      name: "Yuzu Cheesecake",
-      description: "Light, citrusy Japanese-inspired cheesecake",
-      price: "$6.00",
+      id: "torte",
+      name: "Torte",
+      description: "Selezione di torte fatte in casa",
+      price: "Varia",
       image: dessert1,
     },
   ];
@@ -116,10 +98,10 @@ const Menu = () => {
       <section className="px-6 py-16 bg-background text-center">
         <div className="container mx-auto max-w-4xl">
           <h1 className="font-serif text-5xl md:text-6xl font-bold mb-6 animate-fade-in">
-            Our Menu
+            Il Nostro Menu
           </h1>
           <p className="text-xl text-muted-foreground animate-fade-in">
-            Thoughtfully crafted drinks and treats for every moment
+            Specialty Coffee di altissima qualità
           </p>
         </div>
       </section>
@@ -129,9 +111,9 @@ const Menu = () => {
         <div className="container mx-auto max-w-6xl">
           <Tabs defaultValue="coffee" className="w-full">
             <TabsList className="grid w-full max-w-md mx-auto grid-cols-3 mb-12">
-              <TabsTrigger value="coffee">Coffee</TabsTrigger>
-              <TabsTrigger value="tea">Tea</TabsTrigger>
-              <TabsTrigger value="desserts">Desserts</TabsTrigger>
+              <TabsTrigger value="coffee">Caffè</TabsTrigger>
+              <TabsTrigger value="tea">Tè</TabsTrigger>
+              <TabsTrigger value="desserts">Dolci</TabsTrigger>
             </TabsList>
 
             <TabsContent value="coffee" className="space-y-8">
