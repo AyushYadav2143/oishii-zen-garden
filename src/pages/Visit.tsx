@@ -89,10 +89,10 @@ const Visit = () => {
                   </h3>
                   <p className="text-muted-foreground">
                     <a
-                      href="mailto:hello@oishiicafe.com"
+                      href="mailto:oishiispecialtycoffee@gmail.com"
                       className="hover:text-primary transition-colors"
                     >
-                      hello@oishiicafe.com
+                      oishiispecialtycoffee@gmail.com
                     </a>
                   </p>
                 </div>
