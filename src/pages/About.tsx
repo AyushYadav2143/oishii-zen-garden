@@ -1,5 +1,5 @@
-import gallery1 from "@/assets/gallery-1.jpg";
-import gallery2 from "@/assets/gallery-2.jpg";
+import cafeExterior from "@/assets/cafe-exterior-storefront.jpg";
+import chiaraBrewing from "@/assets/chiara-brewing.jpg";
 
 const About = () => {
   return (
@@ -39,8 +39,8 @@ const About = () => {
             </div>
             <div className="rounded-2xl overflow-hidden shadow-lg animate-scale-in">
               <img
-                src={gallery1}
-                alt="Café Interior"
+                src={cafeExterior}
+                alt="Oishii Coffee Storefront"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -54,8 +54,8 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1 rounded-2xl overflow-hidden shadow-lg animate-scale-in">
               <img
-                src={gallery2}
-                alt="Coffee Being Poured"
+                src={chiaraBrewing}
+                alt="Chiara Brewing Coffee"
                 className="w-full h-full object-cover"
               />
             </div>
