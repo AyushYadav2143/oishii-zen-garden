@@ -22,7 +22,7 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 animate-fade-in">
               <h2 className="font-serif text-3xl font-semibold">
-                La Storia di Chiara
+                La storia di Oishii
               </h2>
               <p className="text-muted-foreground leading-relaxed">
                 Oishii Coffee è un progetto nato dalla creatività e passione di Chiara, una ragazza di 32 anni. Dopo la sua laurea a Milano in "Fashion Stylist" decide di esplorare il mondo attraverso il programma Au Pair svolto negli Stati Uniti, a Londra e per ultimo a Tokyo.
@@ -61,7 +61,7 @@ const About = () => {
             </div>
             <div className="order-1 md:order-2 space-y-6 animate-fade-in">
               <h2 className="font-serif text-3xl font-semibold">
-                La Nostra Filosofia
+                La filosofia di Oishii
               </h2>
               <p className="text-muted-foreground leading-relaxed">
                 Oishii Coffee è una sala degustazione di Specialty Coffee che propone una materia prima di altissima qualità estratta con diverse tecniche e ricette.
